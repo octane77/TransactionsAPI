@@ -1,17 +1,20 @@
-#SEERBIT CODING INTERVIEW CHALLENGE
+SEERBIT CODING INTERVIEW CHALLENGE
+
+
 This repository contains a solution to the Seerbit Coding Interview Challenge.
 The challenge is to create a RESTful API for calculating real-time statistics for the last 30 seconds of transactions.
 
 Requirements
 These are the additional requirements for the solution:
 
-Use Java to complete the challenge.
-Unit tests are compulsory.
-The API has to be thread-safe with concurrent requests.
-The POST /transactions and GET /statistics endpoints MUST execute in constant time and memory ie O(1). Scheduled cleanup is not sufficient.
-The solution has to work without a database (this also applies to in-memory databases).
-mvn clean install and mvn clean integration-test must complete successfully.
-In addition to passing the tests, source code should be well-commented. The solution must be at a quality level that you would be comfortable enough to put in production.
+- Use Java to complete the challenge.
+- Unit tests are compulsory.
+- The API has to be thread-safe with concurrent requests.
+- The POST /transactions and GET /statistics endpoints MUST execute in constant time and memory ie O(1). Scheduled cleanup is not sufficient.
+- The solution has to work without a database (this also applies to in-memory databases).
+- mvn clean install and mvn clean integration-test must complete successfully.
+- In addition to passing the tests, source code should be well-commented. 
+  The solution must be at a quality level that you would be comfortable enough to put in production.
 
 Problem Statement
 We would like to have a RESTful API for our transaction statistics. The main use case for the API is to calculate real-time statistics for the last 30 seconds of transactions. The API needs the following endpoints:

@@ -101,11 +101,8 @@ The deleteAllTransactions() method deletes all transactions from the repository 
 Logging
 The class uses the Logger and LoggerFactory classes from the slf4j library to log debug and error messages. This helps with debugging and troubleshooting the application.
 
-This is followed by the 
 
 Summary Engineering Decisions:
-
-
 
 The TransactionService class is responsible for adding new transactions, retrieving statistics about existing transactions, and deleting all transactions from the repository. It performs validations on the transaction data before adding it to the repository and throws exceptions if the data is invalid. The service delegates the actual storage and retrieval of transactions to the TransactionRepository.
 
@@ -148,5 +145,3 @@ Using SLF4J logging to log errors and debug messages.
 Using an enum class ErrorCode to represent error codes for use in InvalidTransactionException instead of just using strings.
 
 These decisions were made to ensure thread-safety, efficiency, and clarity in the implementation of the class.
-
-In essence 
